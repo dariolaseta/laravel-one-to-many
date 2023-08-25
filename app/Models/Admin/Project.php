@@ -14,4 +14,8 @@ class Project extends Model
         "image",
         "content"
     ];
+
+    public function Types(){
+        return $this->belongsTo(Project::class);
+    }
 }
